@@ -1,0 +1,878 @@
+{
+  "countryToRegion": {
+    "French Polynesia": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/pf.png"
+    },
+    "Saint Martin": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/mf.png"
+    },
+    "Venezuela": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ve.png"
+    },
+    "Réunion": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/re.png"
+    },
+    "El Salvador": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/sv.png"
+    },
+    "Dominica": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/dm.png"
+    },
+    "Gibraltar": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/gi.png"
+    },
+    "Kenya": { "region": "Africa", "image": "https://flagcdn.com/w320/ke.png" },
+    "Brazil": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/br.png"
+    },
+    "Maldives": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/mv.png"
+    },
+    "United States": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/us.png"
+    },
+    "Cook Islands": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/ck.png"
+    },
+    "Niue": { "region": "Oceania", "image": "https://flagcdn.com/w320/nu.png" },
+    "Seychelles": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/sc.png"
+    },
+    "Central African Republic": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/cf.png"
+    },
+    "Tokelau": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/tk.png"
+    },
+    "Vanuatu": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/vu.png"
+    },
+    "Gambia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/gm.png"
+    },
+    "Guyana": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/gy.png"
+    },
+    "Falkland Islands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/fk.png"
+    },
+    "Belgium": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/be.png"
+    },
+    "Western Sahara": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/eh.png"
+    },
+    "Turkey": { "region": "Asia", "image": "https://flagcdn.com/w320/tr.png" },
+    "Saint Vincent and the Grenadines": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/vc.png"
+    },
+    "Pakistan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/pk.png"
+    },
+    "Åland Islands": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ax.png"
+    },
+    "Iran": { "region": "Asia", "image": "https://flagcdn.com/w320/ir.png" },
+    "Indonesia": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/id.png"
+    },
+    "New Zealand": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/nz.png"
+    },
+    "Afghanistan": {
+      "region": "Asia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
+    },
+    "Guam": { "region": "Oceania", "image": "https://flagcdn.com/w320/gu.png" },
+    "Albania": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/al.png"
+    },
+    "DR Congo": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/cd.png"
+    },
+    "Ivory Coast": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ci.png"
+    },
+    "Sudan": { "region": "Africa", "image": "https://flagcdn.com/w320/sd.png" },
+    "Timor-Leste": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/tl.png"
+    },
+    "Luxembourg": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/lu.png"
+    },
+    "Saudi Arabia": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/sa.png"
+    },
+    "Cambodia": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/kh.png"
+    },
+    "Nepal": { "region": "Asia", "image": "https://flagcdn.com/w320/np.png" },
+    "French Guiana": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/gf.png"
+    },
+    "Malaysia": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/my.png"
+    },
+    "Rwanda": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/rw.png"
+    },
+    "Thailand": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/th.png"
+    },
+    "Antarctica": {
+      "region": "Antarctic",
+      "image": "https://flagcdn.com/w320/aq.png"
+    },
+    "Jordan": { "region": "Asia", "image": "https://flagcdn.com/w320/jo.png" },
+    "Switzerland": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ch.png"
+    },
+    "Comoros": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/km.png"
+    },
+    "Kosovo": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/xk.png"
+    },
+    "Isle of Man": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/im.png"
+    },
+    "Montenegro": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/me.png"
+    },
+    "Hong Kong": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/hk.png"
+    },
+    "Jersey": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/je.png"
+    },
+    "Tajikistan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/tj.png"
+    },
+    "Bulgaria": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/bg.png"
+    },
+    "Egypt": { "region": "Africa", "image": "https://flagcdn.com/w320/eg.png" },
+    "Malawi": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/mw.png"
+    },
+    "Cape Verde": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/cv.png"
+    },
+    "Benin": { "region": "Africa", "image": "https://flagcdn.com/w320/bj.png" },
+    "Morocco": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ma.png"
+    },
+    "Ireland": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ie.png"
+    },
+    "Moldova": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/md.png"
+    },
+    "Denmark": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/dk.png"
+    },
+    "Turkmenistan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/tm.png"
+    },
+    "Micronesia": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/fm.png"
+    },
+    "Monaco": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/mc.png"
+    },
+    "Barbados": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bb.png"
+    },
+    "Algeria": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/dz.png"
+    },
+    "French Southern and Antarctic Lands": {
+      "region": "Antarctic",
+      "image": "https://flagcdn.com/w320/tf.png"
+    },
+    "Eritrea": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/er.png"
+    },
+    "Lesotho": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ls.png"
+    },
+    "Tanzania": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/tz.png"
+    },
+    "Mali": { "region": "Africa", "image": "https://flagcdn.com/w320/ml.png" },
+    "Niger": { "region": "Africa", "image": "https://flagcdn.com/w320/ne.png" },
+    "Andorra": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ad.png"
+    },
+    "United Kingdom": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/gb.png"
+    },
+    "Germany": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/de.png"
+    },
+    "United States Virgin Islands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/vi.png"
+    },
+    "Somalia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/so.png"
+    },
+    "Sint Maarten": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/sx.png"
+    },
+    "Cameroon": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/cm.png"
+    },
+    "Dominican Republic": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/do.png"
+    },
+    "Guinea": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/gn.png"
+    },
+    "Namibia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/na.png"
+    },
+    "Montserrat": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ms.png"
+    },
+    "South Georgia": {
+      "region": "Antarctic",
+      "image": "https://flagcdn.com/w320/gs.png"
+    },
+    "Senegal": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/sn.png"
+    },
+    "Bouvet Island": {
+      "region": "Antarctic",
+      "image": "https://flagcdn.com/w320/bv.png"
+    },
+    "Solomon Islands": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/sb.png"
+    },
+    "France": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/fr.png"
+    },
+    "Saint Helena, Ascension and Tristan da Cunha": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/sh.png"
+    },
+    "Macau": { "region": "Asia", "image": "https://flagcdn.com/w320/mo.png" },
+    "Argentina": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ar.png"
+    },
+    "Bosnia and Herzegovina": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ba.png"
+    },
+    "Anguilla": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ai.png"
+    },
+    "Guernsey": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/gg.png"
+    },
+    "Djibouti": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/dj.png"
+    },
+    "Saint Kitts and Nevis": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/kn.png"
+    },
+    "Syria": { "region": "Asia", "image": "https://flagcdn.com/w320/sy.png" },
+    "Puerto Rico": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/pr.png"
+    },
+    "Peru": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/pe.png"
+    },
+    "San Marino": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/sm.png"
+    },
+    "Australia": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/au.png"
+    },
+    "New Caledonia": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/nc.png"
+    },
+    "Jamaica": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/jm.png"
+    },
+    "Kazakhstan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/kz.png"
+    },
+    "Sierra Leone": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/sl.png"
+    },
+    "Palau": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/pw.png"
+    },
+    "South Korea": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/kr.png"
+    },
+    "Saint Pierre and Miquelon": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/pm.png"
+    },
+    "Belize": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bz.png"
+    },
+    "Papua New Guinea": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/pg.png"
+    },
+    "Iceland": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/is.png"
+    },
+    "American Samoa": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/as.png"
+    },
+    "Burkina Faso": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/bf.png"
+    },
+    "Portugal": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/pt.png"
+    },
+    "Taiwan": { "region": "Asia", "image": "https://flagcdn.com/w320/tw.png" },
+    "Japan": { "region": "Asia", "image": "https://flagcdn.com/w320/jp.png" },
+    "China": { "region": "Asia", "image": "https://flagcdn.com/w320/cn.png" },
+    "Lebanon": { "region": "Asia", "image": "https://flagcdn.com/w320/lb.png" },
+    "Sri Lanka": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/lk.png"
+    },
+    "Guatemala": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/gt.png"
+    },
+    "Serbia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/rs.png"
+    },
+    "Madagascar": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/mg.png"
+    },
+    "Eswatini": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/sz.png"
+    },
+    "Romania": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ro.png"
+    },
+    "Antigua and Barbuda": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ag.png"
+    },
+    "Curaçao": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/cw.png"
+    },
+    "Zambia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/zm.png"
+    },
+    "Zimbabwe": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/zw.png"
+    },
+    "Tunisia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/tn.png"
+    },
+    "United Arab Emirates": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/ae.png"
+    },
+    "Mongolia": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/mn.png"
+    },
+    "Norway": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/no.png"
+    },
+    "Greenland": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/gl.png"
+    },
+    "Uruguay": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/uy.png"
+    },
+    "Bahamas": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bs.png"
+    },
+    "Russia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ru.png"
+    },
+    "British Virgin Islands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/vg.png"
+    },
+    "Wallis and Futuna": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/wf.png"
+    },
+    "Chad": { "region": "Africa", "image": "https://flagcdn.com/w320/td.png" },
+    "Saint Lucia": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/lc.png"
+    },
+    "Yemen": { "region": "Asia", "image": "https://flagcdn.com/w320/ye.png" },
+    "United States Minor Outlying Islands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/um.png"
+    },
+    "Sweden": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/se.png"
+    },
+    "Svalbard and Jan Mayen": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/sj.png"
+    },
+    "Laos": { "region": "Asia", "image": "https://flagcdn.com/w320/la.png" },
+    "Latvia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/lv.png"
+    },
+    "Colombia": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/co.png"
+    },
+    "Grenada": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/gd.png"
+    },
+    "Saint Barthélemy": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bl.png"
+    },
+    "Canada": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ca.png"
+    },
+    "Heard Island and McDonald Islands": {
+      "region": "Antarctic",
+      "image": "https://flagcdn.com/w320/hm.png"
+    },
+    "India": { "region": "Asia", "image": "https://flagcdn.com/w320/in.png" },
+    "Guinea-Bissau": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/gw.png"
+    },
+    "North Macedonia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/mk.png"
+    },
+    "Paraguay": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/py.png"
+    },
+    "Croatia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/hr.png"
+    },
+    "Costa Rica": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/cr.png"
+    },
+    "Uganda": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ug.png"
+    },
+    "Caribbean Netherlands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bq.png"
+    },
+    "Bolivia": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bo.png"
+    },
+    "Togo": { "region": "Africa", "image": "https://flagcdn.com/w320/tg.png" },
+    "Mayotte": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/yt.png"
+    },
+    "Marshall Islands": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/mh.png"
+    },
+    "North Korea": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/kp.png"
+    },
+    "Netherlands": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/nl.png"
+    },
+    "British Indian Ocean Territory": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/io.png"
+    },
+    "Malta": { "region": "Europe", "image": "https://flagcdn.com/w320/mt.png" },
+    "Mauritius": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/mu.png"
+    },
+    "Norfolk Island": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/nf.png"
+    },
+    "Honduras": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/hn.png"
+    },
+    "Spain": { "region": "Europe", "image": "https://flagcdn.com/w320/es.png" },
+    "Estonia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ee.png"
+    },
+    "Kyrgyzstan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/kg.png"
+    },
+    "Chile": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/cl.png"
+    },
+    "Bermuda": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/bm.png"
+    },
+    "Equatorial Guinea": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/gq.png"
+    },
+    "Liberia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/lr.png"
+    },
+    "Pitcairn Islands": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/pn.png"
+    },
+    "Libya": { "region": "Africa", "image": "https://flagcdn.com/w320/ly.png" },
+    "Liechtenstein": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/li.png"
+    },
+    "Vatican City": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/va.png"
+    },
+    "Christmas Island": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/cx.png"
+    },
+    "Oman": { "region": "Asia", "image": "https://flagcdn.com/w320/om.png" },
+    "Philippines": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/ph.png"
+    },
+    "Poland": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/pl.png"
+    },
+    "Faroe Islands": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/fo.png"
+    },
+    "Bahrain": { "region": "Asia", "image": "https://flagcdn.com/w320/bh.png" },
+    "Belarus": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/by.png"
+    },
+    "Slovenia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/si.png"
+    },
+    "Guadeloupe": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/gp.png"
+    },
+    "Qatar": { "region": "Asia", "image": "https://flagcdn.com/w320/qa.png" },
+    "Vietnam": { "region": "Asia", "image": "https://flagcdn.com/w320/vn.png" },
+    "Mauritania": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/mr.png"
+    },
+    "Singapore": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/sg.png"
+    },
+    "Georgia": { "region": "Asia", "image": "https://flagcdn.com/w320/ge.png" },
+    "Burundi": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/bi.png"
+    },
+    "Nauru": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/nr.png"
+    },
+    "South Sudan": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ss.png"
+    },
+    "Samoa": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/ws.png"
+    },
+    "Cocos (Keeling) Islands": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/cc.png"
+    },
+    "Republic of the Congo": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/cg.png"
+    },
+    "Cyprus": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/cy.png"
+    },
+    "Kuwait": { "region": "Asia", "image": "https://flagcdn.com/w320/kw.png" },
+    "Trinidad and Tobago": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/tt.png"
+    },
+    "Tuvalu": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/tv.png"
+    },
+    "Angola": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ao.png"
+    },
+    "Tonga": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/to.png"
+    },
+    "Greece": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/gr.png"
+    },
+    "Mozambique": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/mz.png"
+    },
+    "Myanmar": { "region": "Asia", "image": "https://flagcdn.com/w320/mm.png" },
+    "Austria": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/at.png"
+    },
+    "Ethiopia": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/et.png"
+    },
+    "Martinique": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/mq.png"
+    },
+    "Azerbaijan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/az.png"
+    },
+    "Uzbekistan": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/uz.png"
+    },
+    "Bangladesh": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/bd.png"
+    },
+    "Armenia": { "region": "Asia", "image": "https://flagcdn.com/w320/am.png" },
+    "Nigeria": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/ng.png"
+    },
+    "South Africa": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/za.png"
+    },
+    "Brunei": { "region": "Asia", "image": "https://flagcdn.com/w320/bn.png" },
+    "Italy": { "region": "Europe", "image": "https://flagcdn.com/w320/it.png" },
+    "Finland": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/fi.png"
+    },
+    "Israel": { "region": "Asia", "image": "https://flagcdn.com/w320/il.png" },
+    "Aruba": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/aw.png"
+    },
+    "Nicaragua": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ni.png"
+    },
+    "Haiti": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ht.png"
+    },
+    "Kiribati": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/ki.png"
+    },
+    "Turks and Caicos Islands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/tc.png"
+    },
+    "Cayman Islands": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ky.png"
+    },
+    "Ukraine": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/ua.png"
+    },
+    "Mexico": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/mx.png"
+    },
+    "Palestine": {
+      "region": "Asia",
+      "image": "https://flagcdn.com/w320/ps.png"
+    },
+    "Fiji": { "region": "Oceania", "image": "https://flagcdn.com/w320/fj.png" },
+    "Slovakia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/sk.png"
+    },
+    "Ghana": { "region": "Africa", "image": "https://flagcdn.com/w320/gh.png" },
+    "Suriname": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/sr.png"
+    },
+    "Cuba": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/cu.png"
+    },
+    "Bhutan": { "region": "Asia", "image": "https://flagcdn.com/w320/bt.png" },
+    "Hungary": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/hu.png"
+    },
+    "São Tomé and Príncipe": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/st.png"
+    },
+    "Iraq": { "region": "Asia", "image": "https://flagcdn.com/w320/iq.png" },
+    "Czechia": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/cz.png"
+    },
+    "Lithuania": {
+      "region": "Europe",
+      "image": "https://flagcdn.com/w320/lt.png"
+    },
+    "Northern Mariana Islands": {
+      "region": "Oceania",
+      "image": "https://flagcdn.com/w320/mp.png"
+    },
+    "Botswana": {
+      "region": "Africa",
+      "image": "https://flagcdn.com/w320/bw.png"
+    },
+    "Panama": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/pa.png"
+    },
+    "Gabon": { "region": "Africa", "image": "https://flagcdn.com/w320/ga.png" },
+    "Ecuador": {
+      "region": "Americas",
+      "image": "https://flagcdn.com/w320/ec.png"
+    }
+  }
+}
