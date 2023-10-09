@@ -7,6 +7,7 @@ import { FaPlay, FaRegPauseCircle } from "react-icons/fa";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import useCustomHook from "@/app/hook/useCustomHook";
+import "chart.js-plugin-labels-dv";
 
 export default function GraphCountry() {
   const [country, setCountry] = useState([]);
@@ -22,69 +23,37 @@ export default function GraphCountry() {
   const getData = async () => {
     try {
       const result = await axios.get(
-        `http://localhost:3000/Country/api?year=${year}`
+        `${process.env.NEXT_PUBLIC_API}/Country/api?year=${year}`
       );
       const total = await axios.get(
-        `http://localhost:3000/AllCountry/api?year=${year}`
+        `${process.env.NEXT_PUBLIC_API}/AllCountry/api?year=${year}`
       );
       const arrayResult = result.data.data;
       const resultAfterRegion = addRegion(arrayResult);
-      setCountry(resultAfterRegion);
       setTotal(total.data.data.population);
-    } catch (error) {
-      console.log("error from fetching:", error);
-    }
-  };
 
-  useEffect(() => {
-    getData();
-  }, [year]);
-
-  const handleClickPlay = () => {
-    if (yearInterval) {
-      clearInterval(yearInterval);
-    }
-
-    const newYearInterval = setInterval(() => {
-      setYear((prevYear) => {
-        if (prevYear < 2021) {
-          return prevYear + 1;
-        } else {
-          clearInterval(newYearInterval);
-          setPlay(false);
-          return prevYear;
-        }
-      });
-    }, 200);
-
-    setYearInterval(newYearInterval);
-  };
-
-  useEffect(() => {
-    if (year === 2021) {
-      setPlay(false);
-    }
-  }, [year]);
-
-  useEffect(() => {
-    if (country.length > 0) {
+      // สร้างกราฟ
       const ctx = document.getElementById("chartId").getContext("2d");
       if (chartState) {
         chartState.destroy();
       }
+
       const newChartState = new Chart(ctx, {
         type: "bar",
         data: {
-          labels: country.map((row) => row.countryname),
+          labels: resultAfterRegion.map((row) => row.countryname),
           datasets: [
             {
               label: "Population",
-              data: country.map((row) => row.population),
-              backgroundColor: country.map((row) => bgColor(row.region)),
-              borderColor: country.map((row) => borderColor(row.region)),
+              data: resultAfterRegion.map((row) => row.population),
+              backgroundColor: resultAfterRegion.map((row) =>
+                bgColor(row.region)
+              ),
+              borderColor: resultAfterRegion.map((row) =>
+                borderColor(row.region)
+              ),
               borderWidth: 1,
               datalabels: { anchor: "end", align: "right" },
-              labels: ["Asia", "Europe", "Africa", "Oceania", "Americas"],
             },
           ],
         },
@@ -114,8 +83,35 @@ export default function GraphCountry() {
         },
       });
       setChartState(newChartState);
+    } catch (error) {
+      console.log("error from fetching:", error);
     }
-  }, [country, chartState]);
+  };
+
+  useEffect(() => {
+    getData();
+  }, [year]);
+
+  const handleClickPlay = () => {
+    if (yearInterval) {
+      clearInterval(yearInterval);
+    }
+
+    const newYearInterval = setInterval(() => {
+      setYear((prevYear) => {
+        if (prevYear < 2021) {
+          return prevYear + 1;
+        } else {
+          clearInterval(newYearInterval);
+          setPlay(false);
+          return prevYear;
+        }
+      });
+    }, 200);
+
+    setYearInterval(newYearInterval);
+    setPlay(true);
+  };
 
   return (
     <article className="w-full">
@@ -182,6 +178,10 @@ export default function GraphCountry() {
           </Box>
         </div>
       </div>
+      <img
+        src="https://avatars.githubusercontent.com/u/6844116?s=48&v=4"
+        alt="test"
+      />
     </article>
   );
 }
