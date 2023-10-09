@@ -3,7 +3,9 @@ import pool from "@/app/lib/db";
 
 export async function GET(request) {
   const url = new URL(request.url);
-  const year = url.searchParams.get("year");
+  // const year = url.searchParams.get("year");
+  const year = "1997";
+
   try {
     const data = await pool.query(
       `
