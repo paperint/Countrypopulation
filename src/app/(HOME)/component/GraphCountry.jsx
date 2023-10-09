@@ -178,10 +178,6 @@ export default function GraphCountry() {
           </Box>
         </div>
       </div>
-      <img
-        src="https://avatars.githubusercontent.com/u/6844116?s=48&v=4"
-        alt="test"
-      />
     </article>
   );
 }
