@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import pool from "@/app/lib/db";
 
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const year = searchParams.get("year");
+  const url = new URL(request.url);
+  const year = url.searchParams.get("year");
   // const year = "1997";
 
   try {
@@ -23,7 +23,11 @@ export async function GET(request) {
       `,
       [year]
     );
-    return NextResponse.json({ data: data.rows, message: "Here your data!" });
+    return NextResponse.json({
+      url: url,
+      data: data.rows,
+      message: "Here your data!",
+    });
   } catch (error) {
     console.log("Start Error");
     return NextResponse.error("error pow:", error.message, 500);
