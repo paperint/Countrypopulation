@@ -1,3 +1,12 @@
+## Deploy on Vercel
+[population growth](https://countrypopulation-gules.vercel.app/)
+
+## Tech Stack:
+- NextJS
+- PostgreSQL
+- Tailwindcss
+- ChartJS
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
