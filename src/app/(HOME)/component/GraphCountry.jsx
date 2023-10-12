@@ -22,10 +22,10 @@ export default function GraphCountry() {
 
   const getData = async () => {
     try {
-      const result = await axios.get(
+      const result = await axios.post(
         `${process.env.NEXT_PUBLIC_API}/Country/api?year=${year}`
       );
-      const total = await axios.get(
+      const total = await axios.post(
         `${process.env.NEXT_PUBLIC_API}/AllCountry/api?year=${year}`
       );
       const arrayResult = result.data.data;

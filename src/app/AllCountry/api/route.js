@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import pool from "@/app/lib/db";
 
-export async function GET(request) {
+export async function POST(request) {
   const url = new URL(request.url);
   const year = url.searchParams.get("year");
   try {
