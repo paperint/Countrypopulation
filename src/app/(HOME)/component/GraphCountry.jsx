@@ -8,6 +8,8 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import useCustomHook from "@/app/hook/useCustomHook";
 import "chart.js-plugin-labels-dv";
+import getCountry from "@/app/lib/getCountry";
+import getAllCountry from "@/app/lib/getAllCountry";
 
 export default function GraphCountry() {
   const [country, setCountry] = useState([]);
@@ -22,15 +24,11 @@ export default function GraphCountry() {
 
   const getData = async () => {
     try {
-      const result = await axios.post(
-        `${process.env.NEXT_PUBLIC_API}/Country/api?year=${year}`
-      );
-      const total = await axios.post(
-        `${process.env.NEXT_PUBLIC_API}/AllCountry/api?year=${year}`
-      );
-      const arrayResult = result.data.data;
+      const result = await getCountry(year);
+      const total = await getAllCountry(year);
+      const arrayResult = result.data;
       const resultAfterRegion = addRegion(arrayResult);
-      setTotal(total.data.data.population);
+      setTotal(total.data.population);
 
       // สร้างกราฟ
       const ctx = document.getElementById("chartId").getContext("2d");
