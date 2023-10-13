@@ -27,6 +27,7 @@ export default function GraphCountry() {
       setLoading(true);
       for (let i = year; i < 2022; i++) {
         await getData();
+        setYear((prev) => prev + 1);
       }
     } catch (error) {
       console.log(error);
