@@ -27,12 +27,12 @@ export default function GraphCountry() {
       setLoading(true);
       for (let i = year; i < 2022; i++) {
         await getCountry(i);
-        await getAllCountry(i);
       }
     } catch (error) {
       console.log(error);
     } finally {
       setLoading(false);
+      await getData();
     }
   };
 
