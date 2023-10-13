@@ -22,24 +22,6 @@ export default function GraphCountry() {
   const { bgColor, borderColor, arrayMark, convertToNumberFormat, addRegion } =
     useCustomHook();
 
-  const forceCache = async () => {
-    try {
-      setLoading(true);
-      for (let i = year; i < 2022; i++) {
-        await getCountry(i);
-      }
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setLoading(false);
-      await getData();
-    }
-  };
-
-  useEffect(() => {
-    forceCache();
-  }, []);
-
   const getData = async () => {
     try {
       const result = await getCountry(year);
