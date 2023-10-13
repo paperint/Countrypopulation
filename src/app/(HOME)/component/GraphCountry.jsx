@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import CircularProgress from "@mui/material/CircularProgress";
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { FaPlay, FaRegPauseCircle } from "react-icons/fa";
@@ -12,7 +12,7 @@ import getCountry from "@/app/lib/getCountry";
 import getAllCountry from "@/app/lib/getAllCountry";
 
 export default function GraphCountry() {
-  const [country, setCountry] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [year, setYear] = useState(1950);
   const [play, setPlay] = useState(false);
   const [total, setTotal] = useState("");
@@ -21,6 +21,24 @@ export default function GraphCountry() {
   const [yearInterval, setYearInterval] = useState(null);
   const { bgColor, borderColor, arrayMark, convertToNumberFormat, addRegion } =
     useCustomHook();
+
+  const forceCache = async () => {
+    try {
+      setLoading(true);
+      for (let i = year; i < 2022; i++) {
+        await getData();
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+      setYear(1950);
+    }
+  };
+
+  useEffect(() => {
+    forceCache();
+  }, []);
 
   const getData = async () => {
     try {
@@ -112,70 +130,81 @@ export default function GraphCountry() {
   };
 
   return (
-    <article className="w-full">
-      <div className="flex gap-3">
-        <p className="text-lg font-bold">Region:</p>
-        {regionLabel.map((item, index) => (
-          <div key={index} className="flex items-center justify-center gap-1">
-            <div
-              className="w-4 h-4"
-              style={{
-                backgroundColor: bgColor(item),
-                border: `2px solid ${borderColor(item)}`,
-              }}
-            ></div>
-            <p>{item}</p>
+    <>
+      {loading ? (
+        <Box sx={{ display: "flex" }}>
+          <CircularProgress />
+        </Box>
+      ) : (
+        <article className="w-full">
+          <div className="flex gap-3">
+            <p className="text-lg font-bold">Region:</p>
+            {regionLabel.map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center gap-1"
+              >
+                <div
+                  className="w-4 h-4"
+                  style={{
+                    backgroundColor: bgColor(item),
+                    border: `2px solid ${borderColor(item)}`,
+                  }}
+                ></div>
+                <p>{item}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className="relative">
-        <canvas
-          id="chartId"
-          aria-label="chart"
-          className="w-full max-w-4xl h-96"
-        ></canvas>
-        <div className="absolute flex flex-col items-end p-4 bottom-8 right-9">
-          <p className="text-5xl font-bold text-red-200">{year}</p>
-          <p className="text-xl">Total: {convertToNumberFormat(total)} </p>
-        </div>
-      </div>
+          <div className="relative">
+            <canvas
+              id="chartId"
+              aria-label="chart"
+              className="w-full max-w-4xl h-96"
+            ></canvas>
+            <div className="absolute flex flex-col items-end p-4 bottom-8 right-9">
+              <p className="text-5xl font-bold text-red-200">{year}</p>
+              <p className="text-xl">Total: {convertToNumberFormat(total)} </p>
+            </div>
+          </div>
 
-      <div className="flex items-center justify-center gap-6 mt-10">
-        <button
-          disabled={play}
-          onClick={() => {
-            if (year !== 1950) {
-              setPlay(true);
-              setYear(1950);
-              handleClickPlay();
-            } else {
-              handleClickPlay();
-              setPlay(true);
-            }
-          }}
-        >
-          {play ? (
-            <FaRegPauseCircle className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
-          ) : (
-            <FaPlay className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
-          )}
-        </button>
+          <div className="flex items-center justify-center gap-6 mt-10">
+            <button
+              disabled={play}
+              onClick={() => {
+                if (year !== 1950) {
+                  setPlay(true);
+                  setYear(1950);
+                  handleClickPlay();
+                } else {
+                  handleClickPlay();
+                  setPlay(true);
+                }
+              }}
+            >
+              {play ? (
+                <FaRegPauseCircle className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
+              ) : (
+                <FaPlay className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
+              )}
+            </button>
 
-        <div>
-          <Box sx={{ width: 700 }}>
-            <Slider
-              aria-label="Always visible"
-              min={1950}
-              max={2021}
-              value={year}
-              getAriaValueText={(value) => value.toString()}
-              valueLabelDisplay="on"
-              marks={arrayMark(1950, 2021)}
-            />
-          </Box>
-        </div>
-      </div>
-    </article>
+            <div>
+              <Box sx={{ width: 700 }}>
+                <Slider
+                  aria-label="Always visible"
+                  min={1950}
+                  max={2021}
+                  value={year}
+                  getAriaValueText={(value) => value.toString()}
+                  valueLabelDisplay="on"
+                  marks={arrayMark(1950, 2021)}
+                />
+              </Box>
+            </div>
+          </div>
+        </article>
+      )}
+    </>
   );
 }
