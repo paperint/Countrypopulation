@@ -33,6 +33,7 @@ export default function GraphCountry() {
     } finally {
       setLoading(false);
       setYear(1950);
+      await getData();
     }
   };
 
