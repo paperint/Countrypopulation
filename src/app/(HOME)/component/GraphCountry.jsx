@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
@@ -15,12 +15,12 @@ export default function GraphCountry() {
   const [year, setYear] = useState(1950);
   const [play, setPlay] = useState(false);
   const [total, setTotal] = useState("");
-  const [chartState, setChartState] = useState(null);
   const regionLabel = ["Asia", "Europe", "Africa", "Oceania", "Americas"];
   const [yearInterval, setYearInterval] = useState(null);
   const { bgColor, borderColor, arrayMark, convertToNumberFormat, addRegion } =
     useCustomHook();
 
+  const newChart = useRef(null);
   const getData = async () => {
     try {
       const result = await getCountry(year);
@@ -29,57 +29,63 @@ export default function GraphCountry() {
       const resultAfterRegion = addRegion(arrayResult);
       setTotal(total.data.population);
 
-      // สร้างกราฟ
-      const ctx = document.getElementById("chartId").getContext("2d");
-      if (chartState) {
-        chartState.destroy();
-      }
+      const ctx = document.getElementById("chartId");
+      if (newChart.current) {
+        newChart.current.data.labels = resultAfterRegion.map(
+          (row) => row.countryname
+        );
+        newChart.current.data.datasets[0].data = resultAfterRegion.map(
+          (row) => row.population
+        );
+        newChart.current.data.datasets[0].backgroundColor =
+          resultAfterRegion.map((row) => bgColor(row.region));
+        newChart.current.data.datasets[0].borderColor = resultAfterRegion.map(
+          (row) => borderColor(row.region)
+        );
 
-      const newChartState = new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: resultAfterRegion.map((row) => row.countryname),
-          datasets: [
-            {
-              label: "Population",
-              data: resultAfterRegion.map((row) => row.population),
-              backgroundColor: resultAfterRegion.map((row) =>
-                bgColor(row.region)
-              ),
-              borderColor: resultAfterRegion.map((row) =>
-                borderColor(row.region)
-              ),
-              borderWidth: 1,
-              datalabels: { anchor: "end", align: "right" },
+        newChart.current.update();
+      } else {
+        newChart.current = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: [],
+            datasets: [
+              {
+                label: "Population",
+                data: [],
+                backgroundColor: [],
+                borderColor: [],
+                borderWidth: 1,
+                datalabels: { anchor: "end", align: "right" },
+              },
+            ],
+          },
+          plugins: [ChartDataLabels],
+          options: {
+            plugins: {
+              datalabels: {
+                formatter: function (value, context) {
+                  const population =
+                    context.chart.data.datasets[0].data[context.dataIndex];
+                  const result = convertToNumberFormat(population);
+                  return result;
+                },
+              },
+              legend: false,
             },
-          ],
-        },
-        plugins: [ChartDataLabels],
-        options: {
-          plugins: {
-            datalabels: {
-              formatter: function (value, context) {
-                const population =
-                  context.chart.data.datasets[0].data[context.dataIndex];
-                const result = convertToNumberFormat(population);
-                return result;
+            indexAxis: "y",
+            animation: true,
+            x: {
+              beginAtZero: true,
+              stepSize: 200000000,
+              position: "top",
+              callback: function (value) {
+                return value.toLocaleString();
               },
             },
-            legend: false,
           },
-          indexAxis: "y",
-          animation: false,
-          x: {
-            beginAtZero: true,
-            stepSize: 200000000,
-            position: "top",
-            callback: function (value) {
-              return value.toLocaleString();
-            },
-          },
-        },
-      });
-      setChartState(newChartState);
+        });
+      }
     } catch (error) {
       console.log("error from fetching:", error);
     }

@@ -1,6 +1,14 @@
 import React from "react";
-import GraphCountry from "./GraphCountry";
+// import GraphCountry from "./GraphCountry";
 import { FaHandPointDown } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+const GraphCountry = dynamic(
+  () => {
+    return import("./GraphCountry");
+  },
+  { ssr: false }
+);
 
 export default function Homepage() {
   return (
