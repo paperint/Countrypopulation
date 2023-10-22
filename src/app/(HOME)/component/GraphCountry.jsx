@@ -48,13 +48,17 @@ export default function GraphCountry() {
         newChart.current = new Chart(ctx, {
           type: "bar",
           data: {
-            labels: [],
+            labels: resultAfterRegion.map((row) => row.countryname),
             datasets: [
               {
                 label: "Population",
-                data: [],
-                backgroundColor: [],
-                borderColor: [],
+                data: resultAfterRegion.map((row) => row.population),
+                backgroundColor: resultAfterRegion.map((row) =>
+                  bgColor(row.region)
+                ),
+                borderColor: resultAfterRegion.map((row) =>
+                  borderColor(row.region)
+                ),
                 borderWidth: 1,
                 datalabels: { anchor: "end", align: "right" },
               },
