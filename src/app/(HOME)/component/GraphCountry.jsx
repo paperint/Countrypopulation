@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { FaPlay, FaRegPauseCircle } from "react-icons/fa";
+import { FaRegPlayCircle, FaRegPauseCircle } from "react-icons/fa";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import useCustomHook from "@/app/hook/useCustomHook";
@@ -168,7 +168,7 @@ export default function GraphCountry() {
             {play ? (
               <FaRegPauseCircle className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
             ) : (
-              <FaPlay className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
+              <FaRegPlayCircle className="p-2 text-black rounded-full bg-slate-300 w-9 h-9" />
             )}
           </button>
 

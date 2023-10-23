@@ -18,7 +18,7 @@ export default function Homepage() {
           Population growth per country, 1950 to 2021
         </h1>
         <p className="inline-flex items-center gap-2">
-          Click on the legend below to filter by continent{" "}
+          Click on play to run graph{" "}
           <span>
             <FaHandPointDown className="text-yellow-700" />
           </span>
